@@ -7,11 +7,11 @@ import { Home, CreatePost } from './pages';
 const App = () => {
   return (
     <BrowserRouter>
-      <header className="w-full flex justify-between items-center 
-      bg-gray-800 sm:px-8 px-4 py-4 border-b border-b-[#e6ebf4]">
+      <header className="w-full flex flex-col lg:flex-row justify-between items-center 
+      bg-gray-800 sm:px-8 px-4 py-6 space-y-6">
         <Link to='/'>
           <div className="flex items-center space-x-3 text-white font-medium">
-            <span className="text-lg">Héctor Mendoza</span> <span className="sep">|</span> <img src={logo} alt="Logo" className="w-28 object-contain invert" />
+            <span className="text-lg lg:text-[20px]">Héctor Mendoza</span> <span className="sep">|</span> <img src={logo} alt="Logo" className="w-28 object-contain invert" />
           </div>
         </Link>
 
