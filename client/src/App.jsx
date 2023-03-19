@@ -8,14 +8,16 @@ const App = () => {
   return (
     <BrowserRouter>
       <header className="w-full flex justify-between items-center 
-      bg-white sm:px-8 px-4 py-4 border-b border-b-[#e6ebf4]">
+      bg-gray-800 sm:px-8 px-4 py-4 border-b border-b-[#e6ebf4]">
         <Link to='/'>
-          <img src={logo} alt="Logo" className="w-28 object-contain" />
+          <div className="flex items-center space-x-3 text-white font-medium">
+            <span className="text-lg">Héctor Mendoza</span> <span className="sep">|</span> <img src={logo} alt="Logo" className="w-28 object-contain invert" />
+          </div>
         </Link>
 
-        <Link to='/create-post' className="font-inter font-medium bg-[#6469ff]
-        text-white px-4 py-2 rounded-md">
-          Create
+        <Link to='/create-post' className="font-inter font-medium bg-[#FFF]
+        text-[#6469ff] px-4 py-2 rounded-md hover:text-[#FFF] hover:bg-[#6469ff] transition-all">
+          Create an Image
         </Link>
       </header>
       <main className="sm:p-8 px-4 py-8 w-full bg-[#f9fafe]
